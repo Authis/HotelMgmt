@@ -1,7 +1,16 @@
-import ReactDOM from "react-dom";
-import React from "react";
-import { promises as fsPromises } from 'fs';
-const App = () => {
- return <h1>This is my React app!</h1>;
- }
-ReactDOM.render(<App />, document.getElementById("app"));
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+ <React.StrictMode>
+    <App />
+  </React.StrictMode>
+//document.getElementById('root')
+);
+
+reportWebVitals();

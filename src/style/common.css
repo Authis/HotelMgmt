@@ -1,0 +1,48 @@
+#content {
+  overflow:auto;
+  width: 100%;
+  background: gray;
+  display: flex;
+}
+
+#left{
+  width: 20%;
+  margin:5px;
+  padding: 1em;
+  background: white;
+  float:left;
+}
+
+
+ #right {
+  width: 80%;
+  margin:5px;
+  padding: 1em;
+  background: white;
+  float:right;
+}
+
+#left  { float:left;  }
+#right { float:right; }
+
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
